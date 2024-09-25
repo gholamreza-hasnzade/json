@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+    th,
+    td {
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-b
-<body>
-
-    <header>
-        <h1>Shopping Cart</h1>
-    </header>
-    <hr noshade="true" />
-
-    <!-- <h1>SHopping cart</h1>-->
-    <div class="body">
-
-
-        <div class="cart">
-            <div class="cart-header">
-                <h3>CART</h3>
-                <p class="noOfItems">0 items</p>
-            </div>
-            <hr noshade="true" size="1px" />
-            <div class="cart-items"></div>
-            <hr noshade="true" size="1px" />
-            <div class="cart-footer cart-header">
-                <h4>Total</h4>
-                <p class="total">$0</p>
-            </div>
-            <button class="buy-btn">PROCEED TO BUY</button>
-
-
-        </div>
-        <div class="container">
-            <h3 class="heading"></h3>
-            <!-- result -->
-            <div class="result"></div>
-            <!-- result -->
-        </div>
-
-
-    </div>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Phone</th>
+          <th>Website</th>
+          <th>Company</th>
+        </tr>
+      </thead>
+      <tbody id="userTable">
+        <!-- Data will be injected here -->
+      </tbody>
+    </table>
 
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
